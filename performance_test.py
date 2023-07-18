@@ -1,6 +1,6 @@
-from auction_wong import User, Auction
+from auction import User, Auction
 import bidder_thompson_sampling
-import bidder_wong
+import bidder_ucb
 import numpy as np
 
 
@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     # Generates lists of bidders, users, then constructs the Auction with them
     bidders = [bidder_thompson_sampling.Bidder(num_users=num_users, num_rounds=num_rounds),
-               bidder_wong.Bidder(num_users=num_users, num_rounds=num_rounds)]
+               bidder_ucb.Bidder(num_users=num_users, num_rounds=num_rounds)]
     users = [User() for _ in range(num_users)]
     auction = Auction(users, bidders)
 

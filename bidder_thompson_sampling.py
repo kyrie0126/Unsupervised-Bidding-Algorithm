@@ -1,7 +1,7 @@
 import numpy as np
 
 class Bidder:
-    """Class to implement slow-fitting upper confidence bound (UCB) algorithm
+    """Class to implement Thompson-Sampling bidding algorithm
     
     Args:
         num_users (int): number of users

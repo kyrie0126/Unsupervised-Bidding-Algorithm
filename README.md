@@ -1,2 +1,2 @@
 # Unsupervised-Bidding-Algorithm
-initial commit desc
+Bidding algorithm for advertising that utilizes thompson sampling and UCB algorithms.
